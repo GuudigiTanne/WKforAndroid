@@ -1,0 +1,9 @@
+.gradle
+local.properties
+.DS_Store
+.idea
+*.iml
+/build
+xip-key.json
+secrets.tar
+keystore-upload.jks

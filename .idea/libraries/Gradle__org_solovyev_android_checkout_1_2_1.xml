@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.solovyev.android:checkout-1.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/checkout-1.2.1.aar/392e2b772d326550c268378cbef4a3f6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/checkout-1.2.1.aar/392e2b772d326550c268378cbef4a3f6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.solovyev.android/checkout/1.2.1/19783555c28ebec646c5d1b41f83ae2ac04a4b1/checkout-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
