@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WKForAndroid.iml" filepath="$PROJECT_DIR$/WKForAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WKforAndroid.iml" filepath="$PROJECT_DIR$/WKforAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/WaniKani/WaniKani.iml" filepath="$PROJECT_DIR$/WaniKani/WaniKani.iml" />
     </modules>
   </component>
