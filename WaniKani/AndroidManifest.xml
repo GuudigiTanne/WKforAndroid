@@ -14,11 +14,9 @@
         android:imeOptions="flagNoExtractUi"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_school_white_24dp" />
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/apptheme_main" />
@@ -33,7 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".app.activity.Browser"
             android:parentActivityName=".app.activity.MainActivity">
@@ -41,41 +38,33 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.ItemDetailsActivity"
             android:parentActivityName=".app.activity.MainActivity"
             android:theme="@style/AppTheme_NoActionBar">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.RecentUnlocksActivity"
             android:label="@string/card_title_recent_unlocks"
             android:parentActivityName=".app.activity.MainActivity">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.FirstTimeActivity"
             android:icon="@drawable/ic_wanikani_stamp" />
-
         <activity
             android:name=".preference.SettingsActivity"
             android:label="@string/title_settings"
             android:parentActivityName=".app.activity.MainActivity">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.WebReviewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
@@ -85,12 +74,10 @@
             android:process=":webview"
             android:theme="@style/AppTheme_NoActionBar"
             android:windowSoftInputMode="adjustResize">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.SWWebReviewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
@@ -100,50 +87,41 @@
             android:process=":swwebview"
             android:theme="@style/AppTheme_NoActionBar"
             android:windowSoftInputMode="adjustResize">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.ProgressDetailsActivity"
             android:label="@string/card_title_progress"
             android:parentActivityName=".app.activity.MainActivity"
             android:theme="@style/AppTheme_NoActionBar">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.CriticalItemsActivity"
             android:label="@string/card_title_progress"
             android:parentActivityName=".app.activity.MainActivity">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.NotificationDetailsActivity"
             android:label="@string/card_title_notifications"
             android:parentActivityName=".app.activity.MainActivity"
             tools:ignore="UnusedAttribute">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".app.activity.MainActivity" />
         </activity>
-
         <activity
             android:name=".app.activity.DonationsActivity"
             android:label="@string/title_donations" />
 
         <receiver android:name=".content.notification.NotificationPublisher" />
-
         <receiver android:name=".content.notification.NotificationReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT" />
@@ -155,5 +133,16 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <receiver android:name=".HomeScreenWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/home_screen_widget_info" />
+        </receiver>
     </application>
+
 </manifest>
